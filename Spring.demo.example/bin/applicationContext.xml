@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean name="myFortuneService" class="com.spring.HappyFortuneService"></bean>
+<bean name="myBaseBallCoach" class="com.spring.BaseBallCaoch">
+<property name="myFortuneService" ref="myFortuneService"/>
+<!--  <constructor-arg name="myFortuneService" ref="myFortuneService"/>-->
+</bean>
+<bean name="myTrackCoach" class="com.spring.TrackCoach"></bean>
+</beans>
